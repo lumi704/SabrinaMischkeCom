@@ -2,6 +2,15 @@
     font-family: Poppins;
 }
 
+:root {
+  --neutral-1: #1A1E27;
+  --neutral-2: #1B2234;
+  --neutral-3: #2A334A;
+  --accent-1: #F3AC4F;
+  --accent-2: #34C780;
+}
+
+
 body{
     padding: 0;
     margin: 0;
@@ -12,8 +21,9 @@ body{
     min-height: 100vh;
     height: 100%;
     position: relative;
-    background-color: #263238;
+    background-color: var(--neutral-1);
     color: white;
+    overflow: hidden;
 }
 
 
@@ -32,12 +42,11 @@ h1{
     color: white;
     text-align: center;
     font-size: 2.5rem;
-    margin: 2rem;
 }
 
 
 header {
-  background-color: #333;
+  background-color: var(--neutral-2);
   padding: 10px 0;
 }
 
@@ -60,8 +69,56 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #555;
+  background-color: var(--neutral-3);
 }
+
+
+
+.fullscreen-video-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.calling-card{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1rem;
+  width: 420px;
+  background-color: #00000080;
+}
+
+.title{
+  width: 100%;
+  text-align: start;
+}
+
+.tagline{
+  width: 100%;
+  text-align: start;
+}
+
+@media (max-width:600px){
+  :root{
+    font-size: 12px;
+  }
+
+  .calling-card{
+    width: 100%;
+    position: fixed;
+    bottom: 0rem;
+    right: 0rem;
+  }
+}
+
+
+
+
+
+
+
+
 
 /* spinner */
 
